@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BrightPath • Tuition Classroom</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="login">
+  <div class="login-bg"><div class="orb o1"></div><div class="orb o2"></div></div>
+  <div class="login-card">
+    <div class="logo">B</div><div class="eyebrow">PRIVATE LEARNING SPACE</div>
+    <h1>BrightPath</h1><p class="sub">A focused classroom for better learning.</p>
+    <div class="role-switch"><button class="active" data-role="student">Student</button><button data-role="tutor">Tutor</button></div>
+    <label>Passcode</label><div class="pass"><input id="pass" type="password" placeholder="Enter your passcode"><button id="eye">◉</button></div>
+    <button id="loginBtn" class="primary wide">Sign in <span>→</span></button><p id="err"></p>
+    <div class="secure">🔒 Private classroom access</div>
+  </div>
+</div>
+
+<div id="app" class="hide">
+<header><div class="brand"><div class="logo sm">B</div><div><b>BrightPath</b><small>Tuition Classroom</small></div></div>
+<div class="header-right"><div class="search">⌕ <input placeholder="Search classroom"></div><button class="bell">♧</button><div class="profile"><div class="avatar">A</div><span id="roleName">Student</span>⌄</div><button id="logout" class="logout">↪</button></div></header>
+<div class="appbody">
+<aside><div class="menu-label">MENU</div><button class="nav active" data-page="dashboard"><i>⌂</i> Dashboard</button><button class="nav" data-page="assignments"><i>✓</i> Assignments <em id="assignmentDot"></em></button><button class="nav" data-page="calendar"><i>□</i> Calendar</button><button class="nav" data-page="tracking"><i>◫</i> Student Progress</button><button class="nav" data-page="files"><i>↥</i> Resources</button><button class="nav" data-page="chat"><i>◌</i> Messages <em id="msgDot"></em></button><button class="nav" data-page="notes"><i>✎</i> Notes</button><div class="side-bottom"><div class="mini-card"><b>Need help?</b><p>Message your tutor anytime.</p><button onclick="go('chat')">Open chat →</button></div></div></aside>
+<main id="main"></main>
+</div></div>
+<script src="app.js"></script></body></html>
